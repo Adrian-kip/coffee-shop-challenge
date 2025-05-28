@@ -22,7 +22,7 @@ class Customer:
         return list({order.coffee for order in self._orders})
 
     def create_order(self, coffee, price):
-        new_order = Order(self, coffee, price)
+        new_order =(self, coffee, price)
         self._orders.append(new_order)
         return new_order
 

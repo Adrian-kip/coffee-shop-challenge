@@ -35,7 +35,7 @@ class Order:
         return self._coffee
 
     @coffee.setter
-    def coffee(self, value)
+    def coffee(self, value):
         if value.__class__.__name__ != 'Coffee':
             raise TypeError("Coffee must be an instance of Coffee class")
         self._coffee = value
